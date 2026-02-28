@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOMAD</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: sans-serif;
+      background: #f5f0e8;
+      color: #111;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a { text-decoration: none; color: #111; margin-left: 1.5rem; font-size: 0.9rem; }
+    .logo { font-size: 1.4rem; font-weight: bold; color: #c4502a; }
+
+    .hero {
+      padding: 5rem 5%;
+      max-width: 600px;
+    }
+
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1rem; }
+    .hero h1 span { color: #c4502a; }
+    .hero p { color: #555; line-height: 1.7; margin-bottom: 2rem; }
+
+    .hero button {
+      background: #c4502a;
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 1rem;
+      padding: 3rem 5%;
+      background: #111;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 200px;
+      background: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 6px;
+    }
+
+    .card h3 { color: #c4502a; margin-bottom: 0.5rem; }
+    .card p { font-size: 0.88rem; color: #aaa; }
+
+    @media (max-width: 600px) {
+      .cards { flex-direction: column; }
+      nav a { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">NOMAD</div>
+    <div>
+      <a href="#">Destinations</a>
+      <a href="#">Offres</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Voyagez <span>autrement.</span></h1>
+    <p>Des expériences uniques pour ceux qui refusent l'ordinaire. Chaque destination, une aventure.</p>
+    <button>Découvrir</button>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <h3>Itinéraires uniques</h3>
+      <p>Aucune route ne ressemble à une autre.</p>
+    </div>
+    <div class="card">
+      <h3>Guides locaux</h3>
+      <p>Des experts qui vivent sur place.</p>
+    </div>
+    <div class="card">
+      <h3>Tout inclus</h3>
+      <p>Hébergement, transport, repas.</p>
+    </div>
+  </section>
+
+</body>
+</html>
